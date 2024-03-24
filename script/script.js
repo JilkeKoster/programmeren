@@ -8,6 +8,9 @@ kop.textContent = bericht;
 let openPopupButtons = document.querySelectorAll('[data-popup-target]');
 let closePopupButtons = document.querySelectorAll('[data-close-button]');
 let overlay = document.getElementById('overlay');
+// Javascript uitleg:
+// [data-popup-trager] staat tussen [haakjes] omdat het element uit de htlm word gehaalt. 
+// 'overlay' staat tussen 'haakjes' omdat het een ID is.
 
 openPopupButtons.forEach(button => {
     button.addEventListener('click', () => {
@@ -15,6 +18,8 @@ openPopupButtons.forEach(button => {
         openPopup(popup);
     });
 });
+// Javascript uitleg:
+
 
 overlay.addEventListener('click', () => {
     const popups = document.querySelectorAll('.popup.active');
@@ -46,7 +51,7 @@ function closePopup(popup) {
 const muziek = document.getElementById('muziek');
 let audio = new Audio();
 
-audio.src = '../audio/muziek1.mp3';
+audio.src = '../audio/muziek2.mp3';
 
 let isPlaying = false;
 
