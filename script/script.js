@@ -46,7 +46,7 @@ function closePopup(popup) {
 const muziek = document.getElementById('muziek');
 let audio = new Audio();
 
-audio.src = '../audio/muziek.mp3';
+audio.src = '../audio/muziek1.mp3';
 
 let isPlaying = false;
 
