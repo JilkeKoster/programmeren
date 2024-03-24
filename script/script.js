@@ -4,7 +4,7 @@ let bericht = "Digitaal Artefact";
 let kop = document.querySelector("h2");
 kop.textContent = bericht;
 
-// Popup
+// Popup bron: https://www.youtube.com/watch?v=MBaw_6cPmAw
 let openPopupButtons = document.querySelectorAll('[data-popup-target]');
 let closePopupButtons = document.querySelectorAll('[data-close-button]');
 let overlay = document.getElementById('overlay');
@@ -42,11 +42,11 @@ function closePopup(popup) {
     overlay.classList.remove('active');
 }
 
-// Audio
+// Audio bron: https://www.youtube.com/watch?v=VXWvfrmpapI&t=275s
 const muziek = document.getElementById('muziek');
 let audio = new Audio();
 
-audio.src = '../audio/muziek.m4a';
+audio.src = '../audio/muziek.mp3';
 
 let isPlaying = false;
 
