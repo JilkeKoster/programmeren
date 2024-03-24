@@ -51,7 +51,7 @@ function closePopup(popup) {
 const muziek = document.getElementById('muziek');
 let audio = new Audio();
 
-audio.src = './audio/muzieknieuw.mp3';
+audio.src = '/audio/muzieknieuw.mp3';
 
 let isPlaying = false;
 
